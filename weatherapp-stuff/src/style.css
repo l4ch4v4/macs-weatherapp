@@ -1,9 +1,18 @@
+.body {
+  background-color: rgb(129, 195, 129);
+}
+
 .weather-app {
   max-width: 600px;
   margin: 30px 0 auto;
   padding: 20px;
   border: 1px solid #87b3ec;
   border-radius: 5xp;
+  background-color: honeydew;
+}
+
+.col-5 {
+  color: rgb(243, 181, 56);
 }
 
 h1 {
