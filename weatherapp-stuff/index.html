@@ -10,13 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
     <link href=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Maybe-weather</title>
 </head>
@@ -29,8 +32,7 @@
                     <h1 id="city"></h1>
                     <ul>
                         <li id="date"></li>
-                        <li id="description">
-                        </li>
+                        <li id="temperature-description"></li>
                     </ul>
                 </div>
                 <div class="row">
@@ -38,6 +40,7 @@
                         <div class="clearfix weather-temperature">
                             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear">
                             <div class="float-left" />
+
                             <div class="float-left">
                                 <strong id="temperature">
                                 </strong>
@@ -49,10 +52,10 @@
                     <div class="col-6">
                         <ul>
                             <li>
-                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Humidity:<span id="humidity"></span>%</li>
                             </li>
                             <li>
-                                Wind Speed<span id="wind"></span>
+                                Wind Speed:<span id="wind"></span>
                             </li>
                         </ul>
                     </div>
