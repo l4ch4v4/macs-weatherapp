@@ -25,7 +25,7 @@ function formaDate(timestamp) {
 function showTemperature(response) {
   console.log(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-  let cityElement = document.queryselector("#city");
+  let cityElement = document.querySelector("#city");
   let description = document.querySelector("#temperature-description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
