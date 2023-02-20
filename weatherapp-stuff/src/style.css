@@ -18,7 +18,7 @@
 h1 {
   color: #79a0d3;
   font-family: "Bebas Neue", cursive;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -38,4 +38,8 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
