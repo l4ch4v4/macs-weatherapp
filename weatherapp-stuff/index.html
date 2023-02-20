@@ -25,7 +25,7 @@
     <div class="container">
         <div class="weather-app">
             <h1>
-                Denver, CO
+                id="city"
             </h1>
             <ul>
                 <li>
@@ -36,9 +36,16 @@
                 </li>
             </ul>
             <div class="row">
-                <div class="col-5">
-                    <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
-                    <strong> 12℃ | ℉ </strong>
+                <div class="col-6">
+                    <div class="clearfix weather-temperature">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
+                        <div class="float-left" />
+                        <div class="float-left">
+                            <strong>id="temperature"
+                                ></strong><span class="units">℃ | <a href="#">℉</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6">
                     <ul>
