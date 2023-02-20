@@ -25,48 +25,52 @@
     <div class="container">
         <div class="weather-app">
             <h1>
-                id="city"
+                id="city">
             </h1>
             <ul>
                 <li>
                     Friday 06:42
                 </li>
                 <li>
-                    Clear
+                    id="description"
                 </li>
             </ul>
-            <div class="row">
-                <div class="col-6">
-                    <div class="clearfix weather-temperature">
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" />
-                        <div class="float-left" />
-                        <div class="float-left">
-                            <strong>id="temperature"
-                                ></strong><span class="units">℃ | <a href="#">℉</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li>
-                            Percipatation: 1%
-                        </li>
-                        <li>
-                            Humidity: 30%
-                        </li>
-                        <li>
-                            Wind Speed: 6 mph
-                        </li>
-                    </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="clearfix weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear">
+                <div class="float-left" />
+                <div class="float-left">
+                    <strong>
+                        id="temperature">
+                    </strong>
+                    <span class="units">℃ | <a href="#">℉</a>
+                    </span>
                 </div>
             </div>
         </div>
-        <small>
-            <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
-                Open-source code</a>
-            by Marlene A chava
-        </small>
+        <div class="col-6">
+            <ul>
+                <li>
+                    Percipatation: 1%
+                </li>
+                <li>
+                    Humidity:<span id="humidity"></span>
+                </li>
+                <li>
+                    Wind Speed: 6 mph
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <small>
+        <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
+            Open-source code</a>
+        by Marlene A chava
+    </small>
     </div>
     <script src="src/app.js"></script>
 </body>
