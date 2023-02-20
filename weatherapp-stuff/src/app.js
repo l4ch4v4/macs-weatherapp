@@ -1,7 +1,13 @@
 function formaDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -17,9 +23,9 @@ function formaDate(timestamp) {
 }
 
 function showTemperature(response) {
-  console.log(response.data);
+  console.log(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-  let cityElement = document.querryselector("#city");
+  let cityElement = document.queryselector("#city");
   let description = document.querySelector("#temperature-description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
@@ -32,8 +38,8 @@ function showTemperature(response) {
   dateElement.innerHTML = formaDate(response.data.dt * 1000);
 }
 
-let apiKey = "79f47b6b9113e21a5b5e8344934cbfbe";
-let apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?q=Denver&units=metric";
+let apiKey = "d85e64fd3f07880a5ac87af3ba99f834";
+let city = "london";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
