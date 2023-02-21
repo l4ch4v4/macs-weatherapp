@@ -56,3 +56,9 @@ li:first-letter {
 .weather-temperature strong {
   color: rgb(240, 203, 21);
 }
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
