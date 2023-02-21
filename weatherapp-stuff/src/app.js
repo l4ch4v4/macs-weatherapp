@@ -57,8 +57,19 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 19;
 }
 
-let apiKey = "d85e64fd3f07880a5ac87af3ba99f834";
-let city = "New york";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "d85e64fd3f07880a5ac87af3ba99f834";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+}
 
-axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Denver");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
