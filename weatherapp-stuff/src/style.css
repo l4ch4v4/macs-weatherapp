@@ -5,7 +5,7 @@
 h1 {
   color: #79a0d3;
   font-family: "Bebas Neue", cursive;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -34,7 +34,7 @@ li:first-letter {
 .weather-app {
   padding: 20px;
   border: 1px solid #87b3ec;
-  border-radius: 5xp;
+  border-radius: 5px;
   background-color: honeydew;
 }
 
@@ -48,17 +48,19 @@ li:first-letter {
 }
 
 .weather-temperature img {
-  margin-right: 10px;
+  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
 
 .weather-temperature strong {
   color: rgb(240, 203, 21);
+  font-size: 14px;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
-  top: -34px;
+  font-size: 10px;
+  top: -32px;
+  color: rgb(240, 203, 21);
 }
