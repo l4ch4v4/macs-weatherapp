@@ -2,19 +2,6 @@
   background-color: rgb(129, 195, 129);
 }
 
-.weather-app {
-  max-width: 600px;
-  margin: 30px 0 auto;
-  padding: 20px;
-  border: 1px solid #87b3ec;
-  border-radius: 5xp;
-  background-color: honeydew;
-}
-
-.col-5 {
-  color: rgb(243, 181, 56);
-}
-
 h1 {
   color: #79a0d3;
   font-family: "Bebas Neue", cursive;
@@ -44,7 +31,28 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.weather-app {
+  padding: 20px;
+  border: 1px solid #87b3ec;
+  border-radius: 5xp;
+  background-color: honeydew;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 30px 0 auto;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(240, 203, 21);
 }
