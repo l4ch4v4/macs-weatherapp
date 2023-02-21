@@ -77,6 +77,10 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function celsiusMetric(event) {
+  event.preventDefault;
+}
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
