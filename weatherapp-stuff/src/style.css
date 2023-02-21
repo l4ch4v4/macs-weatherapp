@@ -1,8 +1,7 @@
-.container {
-}
-
 .body {
   background-color: rgb(134, 186, 152);
+  background-image: url("b4road.jpg");
+  background-attachment: local, scroll;
 }
 
 h1 {
@@ -59,7 +58,7 @@ li:first-letter {
 .weather-temperature img {
   display: inline-block;
   height: 60px;
-  margin-top: unset;
+  margin-right: 5px;
   vertical-align: top;
   font-size: 64px;
   font-weight: 400;
