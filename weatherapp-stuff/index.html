@@ -28,6 +28,11 @@
     <div class="container">
         <div class="weather-app-wrapper">
             <div class=" weather-app">
+                <form id="search-form">
+                    <input type="search" placeholder="Type a city.." class="form-control" />
+                    <input type="submit" value="search" />
+
+                </form>
                 <div class="overview">
                     <h1 id="city"></h1>
                     <ul>
@@ -37,7 +42,8 @@
                 </div>
                 <div class="row">
                     <div class="d-flex weather-temperature">
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
+                            id="icon" />
                         <div>
                             <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link">℃</a>|<a
                                     href="#" id="fahrenheit-link">℉</a>
