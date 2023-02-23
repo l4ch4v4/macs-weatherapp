@@ -1,7 +1,14 @@
+.flexWeather-temperature {
+  display: flex;
+  gap: 10px;
+  gap: 5px 10px;
+  row-gap: 5px;
+  column-gap: 10px;
+}
+
 .body {
-  background-color: rgb(134, 186, 152);
-  background-image: url("b4road.jpg");
-  background-attachment: local, scroll;
+  background-image: src= "b4road.jpg";
+  background-attachment: fixed;
 }
 
 h1 {
@@ -33,7 +40,6 @@ li:first-letter {
 }
 
 .weather-temp {
-  color: black;
   text-align: right;
   vertical-align: top;
   flex-direction: column;
