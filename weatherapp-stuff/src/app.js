@@ -35,7 +35,7 @@ function showTemperature(response) {
 
   celsiusTemperature = response.data.main.temp;
 
-  temperatureElement.innerHTML = `${temperature}℃`;
+  temperatureElement.innerHTML = temperature;
   cityElement.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
