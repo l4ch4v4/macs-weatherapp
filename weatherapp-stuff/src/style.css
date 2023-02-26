@@ -39,10 +39,11 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.weather-temp {
+.col-6 {
   text-align: right;
   vertical-align: top;
   flex-direction: column;
+  align-self: center;
 }
 
 .weather-app {
