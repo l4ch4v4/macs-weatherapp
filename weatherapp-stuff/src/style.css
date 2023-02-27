@@ -1,14 +1,6 @@
 .flexWeather-temperature {
   display: flex;
-  gap: 10px;
-  gap: 5px 10px;
-  row-gap: 5px;
-  column-gap: 10px;
-}
-
-.body {
-  background-image: src= "b4road.jpg";
-  background-attachment: fixed;
+  flex-direction: row;
 }
 
 h1 {
