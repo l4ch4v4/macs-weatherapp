@@ -1,3 +1,9 @@
+body {
+  background-image: url("r4od.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .flexWeather-temperature {
   display: flex;
   flex-direction: row;
