@@ -92,9 +92,12 @@ li:first-letter {
   color: orange;
 }
 
-.weather-forcast-date,
-.weather-forcast-temperatre-min {
+.weather-forcast-date {
   font-size: 16pc;
+  opacity: 0.6;
+}
+
+.weather-forcast-temperatre-min {
   opacity: 0.6;
 }
 
