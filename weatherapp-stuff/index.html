@@ -39,49 +39,48 @@
                         </div>
                     </div>
                 </form>
-                <div class="overview">
+                <div id="overview" class="flex-container">
                     <h1 id="city"></h1>
                     <ul>
                         <li>Last updated:<span id="date"> </span></li>
                         <li id="temperature-description"></li>
                     </ul>
-                </div>
-                <div class="row ">
 
-                    <div class="flexWeather-temperature">
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
-                            id="icon" />
-                        <div>
+                    <div class="box-1">
+
+                        <span id="flexWeather-temperature">
+                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
+                                id="icon" />
+
                             <strong id="temperature"></strong>
                             <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
                                 <a href="#" id="fahrenheit-link">°F</a></span>
+
+                        </span>
+
+                        <div class="box-2">
+                            <ul>
+                                <li>
+                                    Humidity:<span id="humidity"></span>%
+                                </li>
+                                <li>
+                                    Wind Speed:<span id="wind"></span> km/h
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+
                         </div>
                     </div>
-                </div>
 
-
-                <div class="d-flex flex-column align-items-center w-100">
-                    <ul>
-                        <li>
-                            Humidity:<span id="humidity"></span>%
-                        </li>
-                        <li>
-                            Wind Speed:<span id="wind"></span> km/h
-                        </li>
-                    </ul>
+                    <small>
+                        <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
+                            Open-source code</a>
+                        by Marlene A Chava & Hosted by <a href="https://www.netlify.com/" target="_blank"> Netlify</a>
+                    </small>
                 </div>
             </div>
-        </div>
-
-
-    </div>
-    <small>
-        <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
-            Open-source code</a>
-        by Marlene A Chava & Hosted by <a href="https://www.netlify.com/" target="_blank"> Netlify</a>
-    </small>
-    </div>
-    <script src="src/app.js"></script>
+            <script src="src/app.js"></script>
 </body>
 
 </html>
