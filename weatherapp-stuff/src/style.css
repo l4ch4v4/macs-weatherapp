@@ -85,3 +85,19 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-forcast {
+  margin-top: 20px;
+  text-align: center;
+  color: orange;
+}
+
+.weather-forcast-date,
+.weather-forcast-temperatre-min {
+  font-size: 16pc;
+  opacity: 0.6;
+}
+
+.weather-forcast-temperatres {
+  font-size: 13px;
+}
