@@ -4,9 +4,11 @@ body {
   background-size: 100% 100%;
 }
 
-.flexWeather-temperature {
+.flex-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h1 {
@@ -37,13 +39,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.col-6 {
-  text-align: right;
-  vertical-align: top;
-  flex-direction: column;
-  align-self: center;
-}
-
 .weather-app {
   padding: 20px;
   border: 1px solid #87b3ec;
@@ -53,7 +48,7 @@ li:first-letter {
 
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px 0 auto;
+  margin: 30px auto;
 }
 
 .overview {
@@ -82,6 +77,11 @@ li:first-letter {
   color: black;
 }
 
+.info-temp {
+  display: block;
+  top: -34;
+}
+
 .weather-temperature .active {
   color: black;
   cursor: default;
@@ -91,6 +91,6 @@ li:first-letter {
   text-decoration: none;
 }
 
-.small {
-  color: azure;
+.signature {
+  color: aliceblue;
 }
