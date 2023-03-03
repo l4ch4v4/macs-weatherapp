@@ -39,48 +39,53 @@
                         </div>
                     </div>
                 </form>
-                <div id="overview" class="flex-container">
+                <div class="overview">
                     <h1 id="city"></h1>
                     <ul>
-                        <li>Last updated:<span id="date"> </span></li>
+                        <li>Last updated:<span id="date"></li>
                         <li id="temperature-description"></li>
+                        </span>
                     </ul>
-
-                    <div class="box-1">
-
-                        <span id="flexWeather-temperature">
-                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
-                                id="icon" />
-
+                </div>
+                <div class="row ">
+                    <div class="flexWeather-temperature">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
+                            id="icon" />
+                        <div>
                             <strong id="temperature"></strong>
                             <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
                                 <a href="#" id="fahrenheit-link">°F</a></span>
-
-                        </span>
-
-                        <div class="box-2">
-                            <ul>
-                                <li>
-                                    Humidity:<span id="humidity"></span>%
-                                </li>
-                                <li>
-                                    Wind Speed:<span id="wind"></span> km/h
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-
                         </div>
                     </div>
-
-                    <small>
-                        <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
-                            Open-source code</a>
-                        by Marlene A Chava & Hosted by <a href="https://www.netlify.com/" target="_blank"> Netlify</a>
-                    </small>
                 </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            Humidity:<span id="humidity"></span>%
+                        </li>
+                        <li>
+                            Wind Speed:<span id="wind"></span> km/h
+                        </li>
+                    </ul>
+                    <div class="weather-forcast">
+                        <div class="row">
+                            <div class="col-2">
+                                Thu
+                                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="" id="icon"
+                                    width="36" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <script src="src/app.js"></script>
+            <small>
+                <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
+                    Open-source code</a>
+                by Marlene A Chava & Hosted by <a href="https://www.netlify.com/" target="_blank"> Netlify</a>
+            </small>
+        </div>
+        <script src="src/app.js"></script>
 </body>
 
 </html>

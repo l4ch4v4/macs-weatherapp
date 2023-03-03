@@ -77,11 +77,6 @@ li:first-letter {
   color: black;
 }
 
-.info-temp {
-  display: block;
-  top: -34;
-}
-
 .weather-temperature .active {
   color: black;
   cursor: default;
@@ -89,8 +84,4 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
-}
-
-.signature {
-  color: aliceblue;
 }
