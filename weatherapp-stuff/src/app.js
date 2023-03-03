@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Sat", "Sun", "Mon"];
@@ -52,6 +53,14 @@ function displayForecast(response) {
   console.log(forecastHTML);
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "caa883a4a60d93878755b08a933f74ea";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${Cordinates.lat}&lon=${cordinates.lon}&appid=${apikey}&units=metric`;
+  console.log(apiUrl);
+  axio.get(apiUrl).then(displayForecast);
+}
+
 function showTemperature(response) {
   console.log(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
@@ -76,6 +85,8 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -123,4 +134,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Denver");
-displayForecast();
