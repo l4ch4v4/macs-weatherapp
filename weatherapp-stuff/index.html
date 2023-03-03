@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <link href=" preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=" preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
 
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 
@@ -27,7 +27,7 @@
 <body>
     <div class="container">
         <div class="weather-app-wrapper">
-            <div class=" weather-app">
+            <div class="weather-app">
                 <form id="search-form" class="mb-3">
                     <div class="row">
                         <div class="col-9">
@@ -42,45 +42,45 @@
                 <div class="overview">
                     <h1 id="city"></h1>
                     <ul>
-                        <li>Last updated:<span id="date"></li>
+                        <li>Last updated:<span id="date"></span></li>
                         <li id="temperature-description"></li>
-                        </span>
                     </ul>
                 </div>
-                <div class="row ">
-                    <div class="flexWeather-temperature">
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
-                            id="icon" />
-                        <div>
-                            <strong id="temperature"></strong>
-                            <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-                                <a href="#" id="fahrenheit-link">°F</a></span>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="flexWeather-temperature">
+                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="temperature-description"
+                                id="icon" />
+                            <div>
+                                <strong id="temperature"></strong>
+                                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <ul>
+                                <li>Humidity:<span id="humidity"></span>%</li>
+                                <li>Wind Speed:<span id="wind"></span> km/h</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="d-flex flex-column align-items-center w-100">
-                        <ul>
-                            <li>
-                                Humidity:<span id="humidity"></span>%
-                            </li>
-                            <li>
-                                Wind Speed:<span id="wind"></span> km/h
-                            </li>
-                        </ul>
-                    </div>
+                <div class="row">
                     <div class="weather-forecast" id="forecast"></div>
                 </div>
             </div>
-
-
             <small>
                 <a href="https://github.com/l4ch4v4/Macs-weatherapp" target="_blank">
                     Open-source code</a>
-                by Marlene A Chava & Hosted by <a href="https://www.netlify.com/" target="_blank"> Netlify</a>
-            </small>
+                by Marlene A Chava & Hosted by
+                <a href="https://www.netlify.com/" target="_blank">
+                    Netlify</a> </small>-
+
         </div>
-        <script src="src/app.js"></script>
+    </div>
+    <script src="src/app.js"></script>
 </body>
 
 </html>
