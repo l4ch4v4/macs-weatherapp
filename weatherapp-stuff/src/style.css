@@ -72,20 +72,11 @@ li:first-letter {
 }
 
 .units {
-  display: inline;
+  display: inline-block;
   margin-left: -1px;
   font-size: 10px;
   top: -40px;
   color: black;
-}
-
-.units .active {
-  color: black;
-  cursor: default;
-}
-
-.units .active:hover {
-  text-decoration: none;
 }
 
 .weather-forcast {
