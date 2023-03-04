@@ -85,7 +85,7 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
 
-  celsiusTemperature = response.data.main.temp;
+  FahrenheitTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = temperature;
   cityElement.innerHTML = response.data.name;
@@ -117,8 +117,6 @@ function handleSubmit(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }

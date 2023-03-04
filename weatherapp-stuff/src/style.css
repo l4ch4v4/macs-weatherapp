@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #5189d3;
+  color: #1b6be4;
   font-family: "Bebas Neue", cursive;
   font-size: 24px;
   font-weight: 100;
@@ -28,7 +28,7 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(207, 95, 85);
+  color: #f71111e9;
   font-family: "Bebas Neue", cursive;
   font-size: 16px;
   font-weight: 100;
@@ -41,9 +41,9 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #87b3ec;
+  border: 1px solid #ffffffe9;
   border-radius: 5px;
-  background-color: honeydew;
+  background-color: rgba(246, 239, 102, 0.708);
 }
 
 .weather-app-wrapper {
@@ -67,7 +67,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(240, 203, 21);
+  color: rgb(115, 180, 227);
   font-size: 14px;
 }
 
@@ -76,13 +76,13 @@ li:first-letter {
   margin-left: -1px;
   font-size: 10px;
   top: -40px;
-  color: black;
+  color: rgb(87, 95, 241);
 }
 
 .weather-forcast {
   margin-top: 20px;
   text-align: center;
-  color: orange;
+  color: rgb(49, 144, 36);
 }
 
 .weather-forcast-date {
@@ -99,5 +99,5 @@ li:first-letter {
 }
 
 small {
-  color: antiquewhite;
+  color: rgb(244, 247, 72);
 }
