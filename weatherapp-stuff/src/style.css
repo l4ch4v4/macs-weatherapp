@@ -71,21 +71,20 @@ li:first-letter {
   font-size: 14px;
 }
 
-.weather-temperature-d-flex .units {
+.units {
   display: inline;
-  text-decoration: none;
   margin-left: -1px;
-  font-size: 8px;
-  top: -34px;
+  font-size: 10px;
+  top: -40px;
   color: black;
 }
 
-.weather-temperature .active {
+.units .active {
   color: black;
   cursor: default;
 }
 
-.weather-temperature .active:hover {
+.units .active:hover {
   text-decoration: none;
 }
 
