@@ -71,8 +71,11 @@ li:first-letter {
   font-size: 14px;
 }
 
-.weather-temperature .units {
-  font-size: 10px;
+.weather-temperature-d-flex .units {
+  display: inline;
+  text-decoration: none;
+  margin-left: -1px;
+  font-size: 8px;
   top: -34px;
   color: black;
 }
