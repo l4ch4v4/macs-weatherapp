@@ -106,3 +106,7 @@ li:first-letter {
 .weather-forcast-temperatres {
   font-size: 13px;
 }
+
+small {
+  color: antiquewhite;
+}
