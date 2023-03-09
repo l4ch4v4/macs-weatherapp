@@ -45,7 +45,7 @@ function displayForecast(response) {
         <img
           src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/v1/forecast?${
             forecastDay.weather[0].icon
-          }@2x.png"
+          }.png"
           alt=""
           id="icon"
           width="36"
@@ -68,7 +68,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "43c03a31a487630a361076o18fbc54at";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -91,7 +91,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.weather[0].icon}@2x.png`
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.weather[0].icon}.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
@@ -99,9 +99,9 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = " 43c03a31a487630a361076o18fbc54at";
+  let apiKey = "43c03a31a487630a361076o18fbc54at";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
+  axios.get(`${apiUrl}&key=${apiKey}`).then(displayTemperature);
 }
 
 function handleSubmit(event) {
