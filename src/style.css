@@ -43,7 +43,7 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #c73e3ee9;
   border-radius: 5px;
-  background-color: rgba(237, 235, 209, 0.552);
+  background-color: hsla(60, 92%, 62%, 0.604);
 }
 
 .weather-app-wrapper {
@@ -66,7 +66,7 @@ li:first-letter {
   width: 60px;
 }
 
-.temperature strong {
+.weather-temperature strong {
   color: rgb(115, 180, 227);
   font-size: 14px;
 }
@@ -76,25 +76,28 @@ li:first-letter {
   margin-left: -1px;
   font-size: 10px;
   top: -40px;
-  color: rgb(87, 95, 241);
+  color: rgb(41, 48, 246);
 }
 
 .weather-forcast {
   margin-top: 20px;
   text-align: center;
-  color: rgb(49, 144, 36);
+  font-style: oblique;
+  color: #ffee39;
 }
 
-.weather-forcast-date {
+.weather-forcast-days {
   font-size: 16pc;
   opacity: 0.6;
+  color: #1b6be4;
 }
 
-.weather-forcast-temperatre-min {
+.weather-forcast-temperature-min {
   opacity: 0.6;
+  color: hsl(5, 100%, 50%);
 }
 
-.weather-forcast-temperatres {
+.weather-forcast-temp {
   font-size: 13px;
 }
 
