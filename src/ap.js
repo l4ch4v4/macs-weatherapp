@@ -41,21 +41,19 @@ function displayForecast(response) {
         forecastHTML +
         `
       <div class="col-2">
-        <div class="weather-forecast">${formatDay(forecastDay.dt)}</div>
+        <div class="weather-forecast">${formatDay(forecastDay.time)}</div>
         <img
-          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/v1/forecast?${
-            forecastDay.weather[0].icon
-          }.png"
+          src="${forecastDay.condition.icon_url}"
           alt=""
           id="icon"
           width="36"
         />
         <div class="weather-forecast-temp">
           <span class="weather-forecast-temperature-max">${Math.round(
-            forecastDay.temp.max
+            forecastDay.temperature.maximum
           )}°</span>
           <span class="weather-forecast-temperature-min">${Math.round(
-            forecastDay.temp.min
+            forecastDay.temperature.minimum
           )}°</span>
         </div>
       </div>
@@ -68,7 +66,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "43c03a31a487630a361076o18fbc54at";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&key=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -100,7 +98,7 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
 }
 
