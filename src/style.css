@@ -66,12 +66,12 @@ li:first-letter {
   width: 60px;
 }
 
-.weather-temperature strong {
+.temperature strong {
   color: rgb(115, 180, 227);
   font-size: 14px;
 }
 
-.unit {
+.units {
   display: inline-block;
   margin-left: -1px;
   font-size: 10px;
