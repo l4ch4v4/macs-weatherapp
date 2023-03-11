@@ -66,7 +66,7 @@ li:first-letter {
   width: 60px;
 }
 
-.weather-temperature strong {
+.flexWeather-temperature strong {
   color: rgb(115, 180, 227);
   font-size: 14px;
 }
