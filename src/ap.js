@@ -87,10 +87,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
-  iconElement.setAttribute(
-    "src",
-    iconElement.setAttribute("src", response.data.condition.icon_url)
-  );
+  iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
 
   getForecast(response.data.coordinates);
