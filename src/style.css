@@ -12,6 +12,7 @@ body {
   margin-top: calc(2 * var(--bs-gutter-y));
   margin-right: calc(2 * var(--bs-gutter-x));
 }
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -87,26 +88,24 @@ li:first-letter {
   color: rgb(41, 95, 246);
 }
 
-.weather-forcast {
+.col-2 {
   margin-top: 30px;
   text-align: center;
+  font-style: bold;
+  color: floralwhite;
+  font-size: 20px;
+}
+
+span.weather-forecast-temperature-min {
+  opacity: 0.6;
+  font-size: 8px;
+  color: hwb(229 2% 0%);
   font-style: oblique;
-  color: #ffee39;
 }
 
-.weather-forcast-days {
-  font-size: 16pc;
-  opacity: 0.6;
-  color: #1b6be4;
-}
-
-.weather-forcast-temperature-min {
-  opacity: 0.6;
-  color: hsl(5, 100%, 50%);
-}
-
-.weather-forcast-temp {
-  font-size: 13px;
+.weather-forecast-temp {
+  font-size: 12px;
+  color: #ff4000;
 }
 
 small {
