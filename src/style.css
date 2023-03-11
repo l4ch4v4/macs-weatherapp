@@ -4,6 +4,14 @@ body {
   background-size: 100% 100%;
 }
 
+.col-6.row {
+  bs-gutter-x: 2.5rem;
+}
+
+.flexWeather-temperature-d-flex.row {
+  margin-top: calc(2 * var(--bs-gutter-y));
+  margin-right: calc(2 * var(--bs-gutter-x));
+}
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -66,7 +74,7 @@ li:first-letter {
   width: 60px;
 }
 
-.flexWeather-temperature strong {
+.weather-temperature strong {
   color: rgb(115, 180, 227);
   font-size: 14px;
 }
@@ -76,11 +84,11 @@ li:first-letter {
   margin-left: -1px;
   font-size: 10px;
   top: -40px;
-  color: rgb(41, 48, 246);
+  color: rgb(41, 95, 246);
 }
 
 .weather-forcast {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   font-style: oblique;
   color: #ffee39;
